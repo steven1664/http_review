@@ -33,12 +33,8 @@ if __name__ == '__main__':
 
     if args.xml:
         web_hosts = parseXML.parsexml(args.xml)
-        reportrun(web_hosts)
-
-    if args.gnmap:
+    elif args.gnmap:
         web_hosts = parseGNMAP.parsegnmap(args.gnmap)
-        reportrun(web_hosts)
-
-    if args.file:
+    elif args.file:
         web_hosts = parseFILE.parsefile(args.file)
-        reportrun(web_hosts)
+    reportrun(web_hosts)

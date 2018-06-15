@@ -27,8 +27,8 @@ def webcheck(web_host, directory):
             with open(reportfile, 'a') as f:
                 f.write('''
                 <tr>
-                <td><a href="'''+web_host+'''" target="_blank">'''+web_host+'''</a></td>
-                <td><img src="./screenshots/'''+url2+'''.png" height="600" width="800"></td>
+                <td><a href="''' + web_host + '''" target="_blank">''' + web_host + '''</a></td>
+                <td><img src="./screenshots/''' + url2 + '''.png" height="600" width="800"></td>
                 </tr>''')
     
     except Exception:

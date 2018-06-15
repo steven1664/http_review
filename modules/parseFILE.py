@@ -5,5 +5,4 @@ def parsefile(files1):
             for line in f:
                 http_hosts.append(line.rstrip())
 
-
     return http_hosts

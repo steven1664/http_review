@@ -21,7 +21,6 @@ def webcheck(web_host, directory):
 
     try:
         r = requests.head(web_host, verify=False)
-
         if r.status_code != 404:
             url2 = web_host.replace('http://','').replace('https://','').replace('.','_')
             takescreenshot(web_host, directory)
@@ -31,5 +30,6 @@ def webcheck(web_host, directory):
                 <td><a href="'''+web_host+'''" target="_blank">'''+web_host+'''</a></td>
                 <td><img src="./screenshots/'''+url2+'''.png" height="600" width="800"></td>
                 </tr>''')
+    
     except Exception:
         pass

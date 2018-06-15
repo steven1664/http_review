@@ -17,5 +17,4 @@ def parsegnmap(files1):
                         lineout = line.split()
                         http_hosts.append('https://' + lineout[1] + ':' + port)
 
-
     return http_hosts
